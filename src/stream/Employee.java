@@ -13,13 +13,14 @@ public class Employee {
     public String name;
     public int age;
     public double salare;
+    public Status status;
 
 
-
-    public Employee(String name, int age, double salare) {
+    public Employee(String name, int age, double salare, Status status) {
         this.name = name;
         this.age = age;
         this.salare = salare;
+        this.status = status;
     }
 
     public String getName() {
@@ -40,6 +41,14 @@ public class Employee {
 
     public double getSalare() {
         return salare;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
     }
 
     public void setSalare(double salare) {
@@ -67,6 +76,13 @@ public class Employee {
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", salare=" + salare +
+                ", status=" + status +
                 '}';
+    }
+
+    public enum Status{
+        FREE,
+        BUSY,
+        VOCATION;
     }
 }

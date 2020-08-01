@@ -14,6 +14,7 @@ import java.util.List;
 public class StreamAPI2 {
 
     /**
+     * 中间操作
      * 筛选与切片
      * filter--接收lambda， 从流中排除掉某些元素
      * limit --阶段流，是其元素不超过给定量
@@ -24,21 +25,21 @@ public class StreamAPI2 {
     public static void main(String[] args) {
 
         List<Employee> employees = Arrays.asList(
-                new Employee("zhangsan", 18, 4543),
-                new Employee("lisi", 19, 3333),
-                new Employee("wangwu", 22, 5555),
-                new Employee("zhaoliu", 30, 20000),
-                new Employee("tianqi", 28, 8888),
+                new Employee("zhangsan", 18, 4543, Employee.Status.BUSY),
+                new Employee("lisi", 19, 3333, Employee.Status.FREE),
+                new Employee("wangwu", 22, 5555, Employee.Status.BUSY),
+                new Employee("zhaoliu", 30, 20000, Employee.Status.VOCATION),
+                new Employee("tianqi", 28, 8888, Employee.Status.FREE),
 //                new Employee("liuba", 25, 7777),
 //                new Employee("liuba", 25, 7777),
-                new Employee("liuba", 25, 7777)
+                new Employee("liuba", 25, 7777, Employee.Status.VOCATION)
         );
 
         employees.stream()
                 .filter( employee -> employee.getName().length() > 4)
 //                .skip(2)
 //                .map(Employee::getName)
-                .map(employee -> employee.getName().toUpperCase())
+//                .map(employee -> employee.getName().toUpperCase())
                 .distinct()
                 .forEach(System.out::println);
 

@@ -9,7 +9,7 @@ import stream.Employee;
 
 /**
  * @ClassName StreamAPI1
- * @Description 生成流
+ * @Description 生成流的几种方式
  * @Author qulingxiao
  * @Date 2020/7/31 22:57
  * @Version 1.0
