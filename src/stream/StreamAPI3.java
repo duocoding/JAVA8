@@ -33,11 +33,11 @@ public class StreamAPI3 {
 //        new StreamAPI3().filterCharater("asdfgghjh")
 //                .forEach(System.out::println);
 //
-//        list.stream()
-//                .map(new StreamAPI3()::filterCharater)
-//                .forEach( v -> {
-//                    v.forEach(System.out::println);
-//                });
+        list.stream()
+                .map(new StreamAPI3()::filterCharater)
+                .forEach( v -> {
+                    v.forEach(System.out::println);
+                });
 
         list.stream()
                 .flatMap(new StreamAPI3()::filterCharater)
