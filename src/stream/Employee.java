@@ -15,6 +15,8 @@ public class Employee {
     public double salare;
     public Status status;
 
+    public Employee() {
+    }
 
     public Employee(String name, int age, double salare, Status status) {
         this.name = name;
