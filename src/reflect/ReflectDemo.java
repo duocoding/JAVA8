@@ -4,6 +4,9 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.Arrays;
+import java.util.Optional;
+import java.util.stream.Stream;
 
 /**
  * @ClassName ReflectDemo
@@ -16,22 +19,18 @@ public class ReflectDemo {
 
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException {
         Class clazz = Class.forName("reflect.Operator");
+        Constructor constructor = clazz.getConstructor(int.class, int.class);
+        Operator obj = (Operator) constructor.newInstance(10, 10);
         Method[] methods = clazz.getDeclaredMethods();
-        for (Method method: methods){
-            method.setAccessible(true);
-        }
-        Field[] fields = clazz.getDeclaredFields();
-        for (Field field: fields){
-            field.setAccessible(true);
-        }
-        Constructor constructor = clazz.getConstructor();
-        Object obj = constructor.newInstance();
-//        Constructor constructor = clazz.getConstructor(int.class, int.class);
-//        Operator obj = (Operator) constructor.newInstance(10, 10);
-
-        Method method = clazz.getDeclaredMethod("setA", int.class);
-        method.setAccessible(true);
-        method.invoke(obj, 20);
+        Arrays.asList(methods).stream()
+                .forEach( m -> m.setAccessible(true));
+        Optional<Method> oneMethod = Arrays.asList(methods).stream()
+                .filter(m -> m.getName().equals("setA"))
+                .findFirst();
+        oneMethod.get().invoke(obj, 20);
+//        Method method = clazz.getDeclaredMethod("setA", int.class);
+//        method.setAccessible(true);
+//        method.invoke(obj, 10);
 
         Method method1 = clazz.getDeclaredMethod("setB", int.class);
         method1.setAccessible(true);
@@ -40,7 +39,7 @@ public class ReflectDemo {
         Method method2 = clazz.getDeclaredMethod("add", int.class, int.class);
         method2.setAccessible(true);
         Object result =  method2.invoke(obj, 20, 20);
-        Integer.valueOf((Integer) result);
+        System.out.println(Integer.valueOf((Integer) result));
 
     }
 }

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1b2a9023-3aa8-4f29-b6e6-7b178e3279b9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JAVA8/META-INF/JAVA8.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JAVA8/reflect/Operator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVA8/reflect/Operator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JAVA8/reflect/ReflectDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVA8/reflect/ReflectDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JAVA8/stream/StreamAPI3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVA8/stream/StreamAPI3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reflect/Operator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reflect/Operator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reflect/ReflectDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reflect/ReflectDemo.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fswpe06lviPkYobTDzbNH7cufc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b2a9023-3aa8-4f29-b6e6-7b178e3279b9" name="Default Changelist" comment="" />
+      <created>1597020291815</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597020291815</updated>
+      <workItem from="1597020294724" duration="211000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="71" key="#Inspections" timestamp="1597020447764">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1597020447764" />
+    <state x="283" y="79" key="SettingsEditor" timestamp="1597020518922">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="283" y="79" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1597020518922" />
+  </component>
+</project>

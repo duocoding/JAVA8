@@ -12,9 +12,6 @@ public class Operator {
     private int a;
     private int b;
 
-    public Operator(){
-
-    }
 
     public Operator(int a, int b) {
         this.a = a;
